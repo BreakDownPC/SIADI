@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset=utf-8" />
+<script type="text/javascript">
+function validacion(){
+if(document.forms[0].isbn.value == " ")
+alert ("datos no validos ");
+else
+document.forms[0].submit();
+}
+</script>
+<title>Formulario Libro</title>
+ <link rel ="stylesheet " href="C:/Users/SOPORTE/Documents/repository.git/Estilos.css "></link>
+</head>
+
+<body>
+<h1> Formulario alta Libro</h1>	
+<form action="insertarLibro.jsp ">
+<fieldset>
+<legend>Formulario alta libro</legend>
+<p>
+<strong>ISBN:</strong> 
+<input type="text " name="isbn " /><p/>
+<p>
+<strong>Titulo:</strong>
+<input type="text " name="titulo " /><p />
+<p>
+<strong>Cate goria:</strong>
+<input type="text " name="categoria " /><p />
+<p>
+<input type="button " value="Pulse este boton " onclick="alert( '¡Has pulsado el boton 3!'); " /><p />
+</fieldset>
+
+</form>
+</body>
+</html>
